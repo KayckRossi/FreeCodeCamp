@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey-Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+
+            <p id="description">Please fill out this form with the necessary
+                information, thank you very much for contributing.</p>
+        </header>
+
+        <fieldset>
+            <form id="survey-form">
+                <label for="name" id="name-label">
+                    Name:<input id="name" name="name" type="text"
+                        placeholder="Enter your name:" required/>
+                </label>
+
+                <label for="email" id="email-label">Email:<input id="email"
+                        name="email" type="email" placeholder="Enter Your
+                        Email:" required />
+                </label>
+
+                <label for="number" id="number-label">
+                    Number:<input id="number" name="number" placeholder="Enter
+                        your number" type="number" min="11" max="11" />
+                </label>
+
+                <label>
+                    Which country do you live in?
+                    <select id="dropdown">
+                        <option>other</option>
+                        <option>Brazil</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                    </select>
+                </label>
+
+                <hr>
+
+                <label>
+                    How old are you?
+                    <input type="radio" value="1" name="years" class="inline"/>18
+                    years more..
+                    <input type="radio" value="2" name="years" class="inline"/>Under
+                    18 years old
+                </label>
+                <hr>
+                <label>
+                    What month are you answering this form?
+                    <input type="checkbox" value="january" class="inline"/>January
+                    <input type="checkbox" value="february" class="inline"/>February
+                    <input type="checkbox" value="march" class="inline"/>March
+                    <input type="checkbox" value="april" class="inline"/>April
+                    <input type="checkbox" value="june" class="inline"/>June
+                    <input type="checkbox" value="july" class="inline"/>July
+                </label>
+
+
+                <label>Tell a little about yourself:
+                    <textarea> </textarea>
+                </label>
+
+
+                <input id="submit" type="submit"/>
+            </form>
+        </fieldset>
+    </body>
+</html>
